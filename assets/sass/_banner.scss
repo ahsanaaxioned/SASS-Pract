@@ -1,0 +1,40 @@
+/*banner section start here*/
+.banner {
+  padding: 123px 0;
+  @include position(relative);
+  background: url(https://fibreguard.com/uploads/_1200x630_crop_center-center_82_none/healthcare-waiting-room-interior-design.jpg?mtime=1595594386) no-repeat top center;
+  background-size: cover;
+  @at-root{
+    .banner::before {
+      @include contentBefore("",100%,100%);
+      display: block;
+      @include position(absolute,$top:0);
+      background: linear-gradient(to right, transparent 75%, #225fab 89%);
+    }
+    .banner::after {
+      @include contentBefore("",100%,100%);
+      display: block;
+      @include position(absolute,$top:0);
+      background: linear-gradient(to left, transparent 26%, #225fab 49%);
+    }
+  }
+  .wrapper { 
+    @include position(relative,2);
+    .banner-content { 
+      padding-top: 66px;
+      h2 {
+        padding-bottom: 10px;
+        color: $logo-color;
+        @include font(32px);
+        text-transform: capitalize;
+      }
+       p {
+        padding-right: 29%;
+        color: #81cbf3;
+        @include font(24px);
+      }
+      P::first-letter {  text-transform: capitalize; }
+     }
+  }
+}
+/*banner section end here*/

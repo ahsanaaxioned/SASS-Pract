@@ -1,0 +1,103 @@
+/*footer css start here*/
+footer {
+  background: linear-gradient(to left, #1e3162, #215fa9);
+
+  .wrapper {
+    width: 100%;
+
+    @at-root {
+      .footer-top {
+        width: 51%;
+        padding-top: 34px;
+        margin: 0 auto 48px auto;
+        @extend %flex-repeat;
+        @include justify-content(space-between);
+      }
+
+      .footer-logo {
+        @include flex-basis(26%);
+
+        p {
+          padding-top: 5px;
+          color: $footer-color;
+          @include font(10px);
+
+          span {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: capitalize;
+          }
+        }
+      }
+
+      .social-link {
+        @include flex-basis(32%);
+      }
+
+      .footer-nav {
+        @extend .footer-logo
+      }
+
+      .top-heading {
+        padding-top: 5px;
+        border-bottom: 2px solid #00629c;
+        @include position(relative);
+        color: $footer-color;
+        @include font(24px);
+      }
+
+      .top-heading::before {
+        @include contentBefore(\f106, $float: left);
+        @include position(absolute, $top: -3px, $right: 20px);
+        color: #3FACDB;
+        @include font(25px, $family: "FontAwesome");
+        @include transform(rotate(-316deg));
+      }
+
+      .footer-headig {
+        color: $footer-color;
+        @include font(15px);
+      }
+
+      .socia-heading {
+        @extend .footer-headig;
+        padding-bottom: 10px;
+      }
+      .footer-link{
+        color: $footer-color;
+        @include font(10px);
+      }
+      .copy{
+        @extend .footer-link
+      }
+      .footerlist {
+        padding-top: 15px;
+        @extend %flex-repeat;
+        @include flex-direction(column);
+        text-transform: capitalize;
+      }
+      .social-item { 
+        padding: 0 8px 0 0; 
+        .icon {
+          width: 28px;
+          height: 28px;
+          border-radius: 50%;
+          @include position(relative);
+          background-color: $white;
+          text-indent: -9999px;
+          &::before {
+            @include position(absolute,$top:50%,$left:50%);
+            @include font($family:"FontAwesome");
+            @include transform(translate(-50%, -50%));
+            text-indent: 0;
+            @extend %transition-repeat;
+          }
+        }
+        .linkedin::before {
+          @include contentBefore(\f0e1);
+          color: #3178B5;
+        }
+      }
+    }
+  }
+}

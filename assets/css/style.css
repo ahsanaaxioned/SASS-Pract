@@ -112,8 +112,435 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%;
+  width: 51%;
   margin: 0 auto;
+}
+
+/* header styling start here*/
+.footerlist, .footer-top, .input-group, .option, .newscontent, .nav-list, .logo-form, .header-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.newscontent, .nav-list, .logo-form, .header-logo {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  align-items: center;
+}
+
+.social-item .icon::before, .submit-btn, .para-anc, .news-anc, .nav-list .nav-link, .header .wrapper .hamburger .bar {
+  transition: all 0.3s ease-in-out;
+}
+
+.header {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.header .wrapper {
+  width: 100%;
+}
+.header-logo {
+  width: 51%;
+  padding-top: 18px;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.header .wrapper .hamburger {
+  display: none;
+}
+.header .wrapper .hamburger .bar {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  display: block;
+  background-color: #fff;
+  text-indent: -9999px;
+}
+.header .wrapper .logo-heading {
+  position: relative;
+  color: #DADEE1;
+  font-size: 30px;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+}
+.header .wrapper .logo-heading::before {
+  content: "\f106";
+  float: left;
+  position: absolute;
+  top: -9px;
+  right: -16px;
+  color: #3FACDB;
+  font-size: 30px;
+  font-family: "FontAwesome";
+  -webkit-transform: rotate(-316deg);
+  -ms-transform: rotate(-316deg);
+  transform: rotate(-316deg);
+}
+.logo-form {
+  -ms-flex-preferred-size: 34%;
+  flex-basis: 34%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.logo-form .log-input {
+  width: 74%;
+}
+.logo-form .log-input input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 6px 4px 6px 10px;
+  border: none;
+  outline: none;
+}
+.logo-form .go-btn {
+  box-sizing: border-box;
+  padding: 6px 10px;
+  border: none;
+  background-color: #388ECB;
+  color: #fff;
+  outline: none;
+  text-transform: capitalize;
+}
+
+.header .wrapper .navbar {
+  width: 100%;
+  margin-top: 40px;
+  background: linear-gradient(to right, rgba(46, 123, 199, 0.568627451), #367db5, rgba(54, 125, 181, 0.6196078431), #225FAB);
+}
+.nav-list {
+  width: 51%;
+  padding: 6px 0;
+  margin: 0 auto;
+}
+.nav-list .list-item {
+  padding: 0 1.3%;
+  border-right: 1px solid #388ECB;
+}
+.nav-list .list-item:last-child {
+  border-right: none;
+}
+.nav-list .nav-link {
+  color: #fff;
+  font-size: 11px;
+  text-transform: capitalize;
+}
+
+/* header end here*/
+/*banner section start here*/
+.banner {
+  padding: 123px 0;
+  position: relative;
+  background: url(https://fibreguard.com/uploads/_1200x630_crop_center-center_82_none/healthcare-waiting-room-interior-design.jpg?mtime=1595594386) no-repeat top center;
+  background-size: cover;
+}
+.banner::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  background: linear-gradient(to right, transparent 75%, #225fab 89%);
+}
+
+.banner::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  background: linear-gradient(to left, transparent 26%, #225fab 49%);
+}
+
+.banner .wrapper {
+  position: relative;
+  z-index: 2;
+}
+.banner .wrapper .banner-content {
+  padding-top: 66px;
+}
+.banner .wrapper .banner-content h2 {
+  padding-bottom: 10px;
+  color: #DADEE1;
+  font-size: 32px;
+  text-transform: capitalize;
+}
+.banner .wrapper .banner-content p {
+  padding-right: 29%;
+  color: #81cbf3;
+  font-size: 24px;
+}
+.banner .wrapper .banner-content P::first-letter {
+  text-transform: capitalize;
+}
+
+/*banner section end here*/
+/*newslatter section start here*/
+.newscontent {
+  padding: 22px 0;
+}
+.newscontent h4 {
+  color: #000;
+  font-size: 10px;
+}
+.news-anc {
+  color: #000;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.news-anc::before {
+  content: "\f054";
+  padding: 0 8px;
+  color: #1c1c1c;
+  font-size: 8px;
+  font-family: "FontAwesome";
+}
+
+h3 {
+  padding-bottom: 16px;
+  color: #4F7EAF;
+  font-size: 25px;
+}
+
+h3::first-letter {
+  text-transform: capitalize;
+}
+
+.input-group, .option {
+  width: 32%;
+  min-width: 209px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  flex-direction: column;
+}
+
+label {
+  font-size: 10px;
+  text-transform: capitalize;
+}
+
+.input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 6PX 4%;
+  border: 1px solid #D4D3D3;
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 0 5px #D1D0D0;
+  box-shadow: inset 0 0 5px #D1D0D0;
+  outline: none;
+}
+
+.succes input {
+  border: 1px solid #367db5;
+}
+
+.error input {
+  border: 1px solid #F62100;
+}
+
+.input-span.fail {
+  visibility: visible;
+}
+
+.input-span {
+  color: #F62100;
+  font-size: 12px;
+  visibility: hidden;
+}
+
+.option {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 10px 0 18px;
+  position: relative;
+  outline: none;
+}
+
+.option::before {
+  content: "\f0d7";
+  float: left;
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  color: #fff;
+  font-size: 12px;
+  font-family: "FontAwesome";
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.option::after {
+  content: "\f0d7";
+  float: left;
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  color: #fff;
+  font-size: 12px;
+  font-family: "FontAwesome";
+}
+
+.company-type, .country {
+  width: 100%;
+  padding: 6px 4%;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  background-color: #369fe3;
+  color: #fff;
+  appearance: none;
+  cursor: pointer;
+}
+
+.para1, .para2 {
+  padding: 0 7% 15px 0;
+  font-size: 10px;
+  line-height: 16px;
+}
+
+.checkbox {
+  padding-bottom: 20px;
+}
+
+.para-anc {
+  font-size: 10px;
+  color: #4BB2E9;
+}
+
+.input-control {
+  padding-bottom: 98px;
+}
+
+.submit-btn {
+  padding: 7px 7%;
+  border: 2px solid transparent;
+  border-radius: 2px;
+  background-color: #409FE3;
+  color: #fff;
+  font-size: 10px;
+}
+
+/*newsletter section end here*/
+/*footer css start here*/
+footer {
+  background: linear-gradient(to left, #1e3162, #215fa9);
+}
+footer .wrapper {
+  width: 100%;
+}
+.footer-top {
+  width: 51%;
+  padding-top: 34px;
+  margin: 0 auto 48px auto;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.footer-logo, .footer-nav {
+  -ms-flex-preferred-size: 26%;
+  flex-basis: 26%;
+}
+.footer-logo p, .footer-nav p {
+  padding-top: 5px;
+  color: #D4D3D3;
+  font-size: 10px;
+}
+.footer-logo p span, .footer-nav p span {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.social-link {
+  -ms-flex-preferred-size: 32%;
+  flex-basis: 32%;
+}
+
+.top-heading {
+  padding-top: 5px;
+  border-bottom: 2px solid #00629c;
+  position: relative;
+  color: #D4D3D3;
+  font-size: 24px;
+}
+
+.top-heading::before {
+  content: "\f106";
+  float: left;
+  position: absolute;
+  top: -3px;
+  right: 20px;
+  color: #3FACDB;
+  font-size: 25px;
+  font-family: "FontAwesome";
+  -webkit-transform: rotate(-316deg);
+  -ms-transform: rotate(-316deg);
+  transform: rotate(-316deg);
+}
+
+.footer-headig, .socia-heading {
+  color: #D4D3D3;
+  font-size: 15px;
+}
+
+.socia-heading {
+  padding-bottom: 10px;
+}
+
+.footer-link, .copy {
+  color: #D4D3D3;
+  font-size: 10px;
+}
+
+.footerlist {
+  padding-top: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  flex-direction: column;
+  text-transform: capitalize;
+}
+
+.social-item {
+  padding: 0 8px 0 0;
+}
+.social-item .icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  position: relative;
+  background-color: #fff;
+  text-indent: -9999px;
+}
+.social-item .icon::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: "FontAwesome";
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-indent: 0;
+}
+.social-item .linkedin::before {
+  content: "\f0e1";
+  color: #3178B5;
 }
 
 /*# sourceMappingURL=style.css.map */

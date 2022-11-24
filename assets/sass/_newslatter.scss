@@ -1,0 +1,156 @@
+/*newslatter section start here*/
+.newsletter {
+  .wrapper {
+    @at-root {
+      .newscontent {
+        padding: 22px 0;
+        @extend %flex-repeat;
+        @extend %align-repeat;
+        
+        h4 {
+          color: $black;
+          @include font(10px);
+        }
+
+        @at-root {
+          .news-anc {
+            color: $black;
+            @include font(10px, 600);
+            text-transform: capitalize;
+            @extend %transition-repeat;
+
+            @at-root {
+              .news-anc::before {
+                @include contentBefore(\f054);
+                padding: 0 8px;
+                color: $black1c;
+                @include font(8px, $family: "FontAwesome");
+              }
+            }
+          }
+        }
+      }
+
+      h3 {
+        padding-bottom: 16px;
+        color: #4F7EAF;
+        @include font(25px);
+      }
+
+      h3::first-letter {
+        text-transform: capitalize;
+      }
+
+      .input-group {
+        width: 32%;
+        min-width: 209px;
+        @extend %flex-repeat;
+        @include flex-direction(column);
+      }
+
+      .option {
+        @extend .input-group
+      }
+
+      label {
+        @include font(10px);
+        text-transform: capitalize;
+      }
+
+      .input {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 6PX 4%;
+        border: 1px solid #D4D3D3;
+        border-radius: 2px;
+        @include boxShadow(inset 0 0 5px #D1D0D0);
+        outline: none;
+      }
+
+      .succes input {
+        border: 1px solid $border-color;
+      }
+
+      .error input {
+        border: 1px solid $error-color;
+      }
+
+      .input-span.fail {
+        visibility: visible;
+      }
+
+      .input-span {
+        color: $error-color;
+        @include font(12px);
+        visibility: hidden;
+      }
+
+      .option {
+        box-sizing: border-box;
+        width: 100%;
+        margin: 10px 0 18px;
+        @include position(relative);
+        outline: none;
+      }
+
+      .option::before {
+        @include contentBefore(\f0d7, $float: left);
+        @include position(absolute, $top: 2px, $right: 10px);
+        color: $white;
+        @include font(12px, $family: "FontAwesome");
+        @include transform (rotate(180deg));
+      }
+
+      .option::after {
+        @include contentBefore(\f0d7, $float: left);
+        @include position(absolute, $top: 12px, $right: 10px);
+        color: $white;
+        @include font(12px, $family: "FontAwesome");
+      }
+
+      .company-type {
+        width: 100%;
+        padding: 6px 4%;
+        border: none;
+        border-radius: 2px;
+        outline: none;
+        background-color: #369fe3;
+        color: $white;
+        appearance: none;
+        cursor: pointer;
+      }
+
+      .country {
+        @extend .company-type
+      }
+
+      .para1 {
+        padding: 0 7% 15px 0;
+        @include font(10px);
+        line-height: 16px
+      }
+      .para2 {
+        @extend .para1
+      }
+      .checkbox { padding-bottom: 20px; }
+
+      .para-anc {
+        @include font(10px);
+        color: #4BB2E9;
+        @extend %transition-repeat;
+      }
+      .input-control { padding-bottom: 98px; }
+
+      .submit-btn {
+        padding: 7px 7%;
+        border: 2px solid transparent;
+        border-radius: 2px;
+        background-color: #409FE3;
+        color: $white;
+        @include font(10px);
+        @extend %transition-repeat;
+      }
+    }
+  }
+}
+/*newsletter section end here*/
