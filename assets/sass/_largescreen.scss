@@ -144,7 +144,7 @@
 /* media for 995px end here*/
 
 /* media for 480px start here*/
-@include for-medium-screen {
+@include for-small-screen {
   .header-logo {
     @include flex-direction(column);
   }
