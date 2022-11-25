@@ -823,7 +823,7 @@ footer .wrapper {
 }
 /* media for 995px end here*/
 /* media for 480px start here*/
-@media (max-width: 995px) {
+@media (max-width: 480px) {
   .header-logo {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
