@@ -1,0 +1,20 @@
+/*hover for desktop strat here*/
+@include for-hover-only{
+  .nav-link:hover { color: $black; }
+  .news-anc:hover { color: $hover }
+  .para-anc:hover { color: $hover; }
+  .submit-btn:hover {
+    color: $background-color;
+    border: 2px solid $background-color;
+    border-radius: 4px;
+    background-color: $white;
+  }
+  .social-item .icon:hover {
+    @include transform(scale(.9));
+  }
+  .ScrollTop:hover { @include transform(scale(.9)); }
+  .nav-link:hover { color: $black; }
+  .footer-link:hover { color: $black; }
+  .bottom-links:hover { color: $black; }
+}
+/*hover for desktop end here*/

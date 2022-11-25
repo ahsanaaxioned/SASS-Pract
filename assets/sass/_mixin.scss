@@ -128,7 +128,7 @@
 }
 
 // mixin for position
-@mixin position($position, $z-index: null, $top: null, $right: null, $bottom: null, $left: null) {
+@mixin position($position:null, $z-index: null, $top: null, $right: null, $bottom: null, $left: null) {
   position: $position;
   z-index: $z-index ;
   top: $top;
@@ -168,4 +168,20 @@
 @mixin boxShadow($value) {
   -webkit-box-shadow: $value;
   box-shadow: $value;
+}
+// mixin for hover
+@mixin for-hover-only {
+  @media (min-width: 995px) { @content; }
+}
+// mixin for Large screen
+@mixin for-large-screen{
+  @media (max-width:1200px){ @content; } 
+}
+// mixin for medium screen
+@mixin for-medium-screen{
+  @media (max-width:995px){ @content; } 
+}
+// mixin for small screen
+@mixin for-small-screen{
+  @media (max-width:480px){ @content; } 
 }

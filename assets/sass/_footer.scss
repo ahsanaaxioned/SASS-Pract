@@ -97,6 +97,70 @@ footer {
           @include contentBefore(\f0e1);
           color: #3178B5;
         }
+        .twitter::before {
+          @include contentBefore(\f099);
+          color: #44A1F2;
+        }
+        
+        .youtube::before {
+          @include contentBefore(\f04b);
+          color: #F62100;
+        }
+        
+        .facebook::before {
+          @include contentBefore(\f09a);
+          color: #5B7FC8;
+        }
+      }
+      .footer-bottom {
+        padding: 7px 0;
+        background-color: #00477b;
+      }
+      
+      .bottom-con {
+        width: 51%;
+        margin: 0 auto;
+        @extend %flex-repeat;
+        @extend %align-repeat;
+        @include justify-content(space-between);
+      }
+      .bottom-nav {
+        @extend %flex-repeat;
+        @extend %align-repeat;
+        @include flex-basis(54%);
+        @include justify-content(center);
+      }
+      .bottom-item {
+        padding: 0 1%;
+        border-right: 1px solid $footer-color;
+      }
+      .bottom-item:nth-child(4) { border: none; }
+      .bottom-links {
+        color: $footer-color;
+        @include font(8px);
+        text-transform: capitalize;
+      }
+      .scrollTop-btn {
+        @include position(fixed,$right:1%,$bottom:2%);
+      }
+      .ScrollTop {
+        width: 40px;
+        height: 40px;
+        border: 1px solid $white;
+        border-radius: 50%;
+        @include position(relative);
+        background-color: $white;
+        box-shadow: 1px 1px 5px $black1c;
+        text-indent: -9999px;
+        @extend %transition-repeat;
+      }
+      .ScrollTop::before {
+        @include contentBefore(\f077);
+        @include position(absolute,$top:50%,$left:50%);
+        color: $black;
+        @include font(20px,$family:"FontAwesome");
+        @include transform(translate(-50%, -50%));
+        text-indent: 0;
       }
     }
   }
