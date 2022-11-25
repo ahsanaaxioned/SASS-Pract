@@ -58,7 +58,7 @@
       }
 
       .input {
-        box-sizing: border-box;
+        @extend %box-repeat;
         width: 100%;
         padding: 6PX 4%;
         border: 1px solid #D4D3D3;
@@ -86,7 +86,7 @@
       }
 
       .option {
-        box-sizing: border-box;
+        @extend %box-repeat;
         width: 100%;
         margin: 10px 0 18px;
         @include position(relative);

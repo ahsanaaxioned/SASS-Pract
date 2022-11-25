@@ -130,6 +130,11 @@ li {
   align-items: center;
 }
 
+.option, .input, .logo-form .go-btn, .logo-form .log-input input {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .ScrollTop, .social-item .icon::before, .submit-btn, .para-anc, .news-anc, .nav-list .nav-link, .header .wrapper .hamburger .bar {
   transition: all 0.3s ease-in-out;
 }
@@ -155,6 +160,7 @@ li {
 
 .header .wrapper .hamburger {
   display: none;
+  cursor: pointer;
 }
 .header .wrapper .hamburger .bar {
   width: 25px;
@@ -195,14 +201,12 @@ li {
   width: 74%;
 }
 .logo-form .log-input input {
-  box-sizing: border-box;
   width: 100%;
   padding: 6px 4px 6px 10px;
   border: none;
   outline: none;
 }
 .logo-form .go-btn {
-  box-sizing: border-box;
   padding: 6px 10px;
   border: none;
   background-color: #388ECB;
@@ -211,7 +215,7 @@ li {
   text-transform: capitalize;
 }
 
-.header .wrapper .navbar {
+.navbar {
   width: 100%;
   margin-top: 40px;
   background: linear-gradient(to right, rgba(46, 123, 199, 0.568627451), #367db5, rgba(54, 125, 181, 0.6196078431), #225FAB);
@@ -333,7 +337,6 @@ label {
 }
 
 .input {
-  box-sizing: border-box;
   width: 100%;
   padding: 6PX 4%;
   border: 1px solid #D4D3D3;
@@ -362,7 +365,6 @@ label {
 }
 
 .option {
-  box-sizing: border-box;
   width: 100%;
   margin: 10px 0 18px;
   position: relative;
@@ -702,13 +704,13 @@ footer .wrapper {
     -ms-flex-pack: center;
     justify-content: center;
   }
-  .banner-content {
-    padding-top: 20px;
-  }
-  .hamburger {
+  .header .wrapper .hamburger {
     margin-right: 5%;
     display: block;
     z-index: 1;
+  }
+  .banner-content {
+    padding-top: 20px;
   }
   .header-logo {
     width: 75%;
@@ -752,9 +754,8 @@ footer .wrapper {
     gap: 50px;
     transition: all 0.3s ease-in-out;
   }
-  .list-item {
+  .nav-list .list-item {
     border: none;
-    padding: 15px;
   }
   .hamburger.active .bar2 {
     opacity: 0;

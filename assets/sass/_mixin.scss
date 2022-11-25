@@ -127,6 +127,12 @@
   flex-basis: $shirink $grow $basis;
 }
 
+// mixin for box sizing
+@mixin boxSizing($property){
+  -webkit-box-sizing:border-box;
+  box-sizing: $property;
+}
+
 // mixin for position
 @mixin position($position:null, $z-index: null, $top: null, $right: null, $bottom: null, $left: null) {
   position: $position;
